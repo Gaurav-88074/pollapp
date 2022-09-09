@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.createOptionParent{
+    width: 95%;
+    height: 50px;
+    border: none;
+    color: black;
+    /* border:2px solid  blue; */
+    display: flex;
+}
+.optionLogo{
+    width: 10%;
+    height: 100%;
+    /* border:2px solid  black; */
+}
+.createOption{
+    width: 90%;
+    height: 100%;
+    border: none;
+    color: black;
+    border-bottom:2px solid  rgb(235, 235, 235);
+    /* border:2px solid  black; */
+    font-size: 18px;
+    padding-left: 20px;
+}
+.createOption:focus{
+    border-bottom:2px solid  orange;
+    outline: none;
+}

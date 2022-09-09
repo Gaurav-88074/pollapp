@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signupDom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 656px;
+    width: 100vw;
+    background-color: #f3f7f7;
+}
+.signupArea{
+
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background-color: #f3f7f7;
+    box-shadow: 0px 0px 6px 6px rgb(238, 237, 236);
+    /* border: 2px solid red; */
+}
+.inputSection{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f7f7;
+    border-top: 7px solid white;
+    border-right: 25px solid white;
+    border-left: 25px solid white;
+    border-bottom: 7px solid white;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.1),0 0 0 transparent;
+    /* border: 1px solid black; */
+}
+
+.logo{
+    height: 60%;
+    width: 10%;
+    /* border: 1px solid white; */
+    
+}
+.inputTextSection{
+    
+    height: 60%;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #f3f7f7;
+    color: #0e141e;
+    /* border: 1px solid black; */
+    
+    
+}
+
+.other{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    
+}
+.buttonSection{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 25px;
+    background-color: #fff;
+}
+.signupButton{
+    height: 80%;
+    width: 55%;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid orange;
+    color:  orange;
+    background-color: #fff;
+    transition: box-shadow 300ms;
+}
+.signupButton:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 3px 0px orange;
+}
+.signupButton:active{
+    box-shadow: 0px 0px 0px 0px orange;
+}
+.connectSection{
+    height: 25%;
+    width: 100%;
+    /* border: 1px solid white;  */
+    background-color: #fff;
+}

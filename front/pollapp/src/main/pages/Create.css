@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.createDom{
+    height: 900px;
+    width: 100vw;
+    background-color: #f3f7f7;;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-content: flex-start;
+    
+}
+.createArea-1{
+    margin-top: 60px;
+    margin-left: auto ;
+    margin-right: auto ;
+    height: 150px;
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 6px 6px rgb(238, 237, 236);
+    /* border: 2px solid black; */
+}
+.questionBox{
+    width: 100%;
+    height: 100%;
+    /* border:3px solid red; */
+    padding-top: 20px;
+    padding-left :  80px;
+}
+.pollHeadBox{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.pollHeading{
+    width: 30%;
+    height: 30%;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    /* border: 1px solid black; */
+}
+.inputQuestion{
+    margin: auto;
+    width: 80%;
+    height: 40%;
+    border: 1px solid black;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #f3f7f7;
+    /* box-shadow: inset 0px 0px 6px
+    #e4e4e4; */
+    /* background-color: #f3f7f7; */
+    font-size: 20px;
+    padding-left: 2px;
+}
+.inputQuestion:focus{
+    border-bottom-color:orange;
+}
+
+.createArea-2{
+    margin-top: 20px;
+    margin-left: auto ;
+    margin-right: auto ;
+    height: auto;
+    width: 800px;
+    background-color: #fff;
+    /* display: flex;
+    flex-wrap: wrap; */
+    box-shadow: 0px 0px 6px 6px #eeedec;
+    /* border: 2px solid black; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+}
+.answerHeading{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 50px;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+}
+.optionBox{
+    width: 90%;
+    height: auto;
+    /* border:1px solid red; */
+
+}
+.createOptionParent{
+    width: 95%;
+    height: 50px;
+    border: none;
+    color: black;
+    /* border:2px solid  blue; */
+    display: flex;
+}
+.optionLogo{
+    width: 10%;
+    height: 100%;
+    /* border:2px solid  black; */
+}
+.createOption{
+    width: 90%;
+    height: 100%;
+    border: none;
+    color: black;
+    border-bottom:2px solid  rgb(235, 235, 235);
+    /* border:2px solid  black; */
+    font-size: 18px;
+    padding-left: 20px;
+}
+.createOption:focus{
+    border-bottom:2px solid  orange;
+    outline: none;
+}
+.addOption{
+    width: 95%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    /* border:2px solid  black; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin-top: 10px;
+    align-items: center;
+    transition: background-color 
+    0.5s;
+}
+.addOption:hover{
+    cursor: pointer;
+    background-color:#f3f7f7;
+}
+.addButton{
+    font-size: 40px;
+    padding: 0px;
+    width: 10%;
+    background-color: orange;
+    color: white;
+    border:none;
+    height: 100%;
+    /* border:2px solid  black; */
+}
+.addAnOptionText{
+    /* border:2px solid  black; */
+    color: orange;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.createSection{
+    margin-top: 20px;
+    margin-left: auto ;
+    margin-right: auto ;
+    height: 100px;
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 0px 6px 6px #eeedec;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    padding-left: 80px;
+}
+.createButton{
+    height: 45%;
+    width: 20%;
+    background-color: white;
+    color: orange;
+    border:1px solid  orange;
+    font-size: 20px;
+    /* border:none; */
+    transition: box-shadow 0.2s;
+}
+.createButton:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 3px 0px rgb(218, 216, 212)
+}
+.createButton:active{
+    box-shadow: 0px 0px 0px 0px #eeedec;
+}

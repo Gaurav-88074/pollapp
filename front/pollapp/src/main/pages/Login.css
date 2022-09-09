@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loginDom{
+    height: 656px;
+    width: 100vw;
+    background-color: #f3f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginArea{
+    width: 450px;
+    height: 500px;
+   
+    background-color: #f3f7f7;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 6px 6px rgb(238, 237, 236);
+}
+.choiceSection{
+    height: 15%;
+    /* border: 2px solid black; */
+}
+.choiceButton{
+    width: 50%;
+    height: 100%;
+    border: none;
+    outline :none;
+    background-color: #fff;
+    color: #6e6e6e;;
+    font-size: 25px;
+    /* border: 2px solid black; */
+}
+.choiceButton:hover{
+    cursor: pointer;
+}
+.buttonActive{
+    color:orange;
+}
+.addInsetShadow{
+    box-shadow: inset 0px 0px 4px #f3f7f7;
+    color:green;
+}
+.inputSection{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f7f7;
+    border-top: 7px solid white;
+    border-right: 20px solid white;
+    border-left: 20px solid white;
+    border-bottom: 7px solid white;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.1),0 0 0 transparent;
+    /* border: 2px solid black; */
+}
+.logo{
+    height: 60%;
+    width: 10%;
+    /* border: 1px solid black; */
+    
+}
+.inputTextSection{
+    
+    height: 60%;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #f3f7f7;
+    color: #0e141e;
+    /* border: 1px solid black;  */
+    
+
+}
+.other{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    
+}
+.buttonSection{
+    height: 15%;
+    width: 100%;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #fff;
+}
+.loginButton{
+    height: 80%;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid orange;
+    color: orange;;
+    background-color: #fff;
+    transition: box-shadow 300ms;
+}
+.loginButton:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 3px 0px orange;
+}
+.loginButton:active{
+    box-shadow: 0px 0px 0px 0px orange;
+}
+.connectSection{
+    height: 25%;
+    width: 100%;
+    /* border: 3px solid black;  */
+    background-color: #fff;
+}

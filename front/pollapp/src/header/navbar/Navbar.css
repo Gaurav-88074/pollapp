@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 65px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+}
+.appNameSection{
+    height: 100%;
+    width: 25%;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* border: 2px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.appName{
+    width: 90%;
+    height: auto;
+    font-size: 40px;
+    font-family:monospace;
+    margin: auto;
+    /* background-color: yellow; */
+    color: #fff;
+    /* line-height: 100px; */
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigationSection{
+    width: 35%;
+    height: 100%;
+    /* border :2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create{
+    border :none;
+    outline: none;
+    background-color: orange;
+    height: 50%;
+    margin: auto;
+    /* width: 0%; */
+    color: white;
+    font-weight: bold;
+    font-size:large;
+}
+.dashboard{
+    border :none;
+    outline: none;
+    background-color: orange;
+    height: 50%;
+    margin: auto;
+    /* width: 30%; */
+    color: white;
+    font-weight: bold;
+    font-size:large;
+}
+.members{
+    border :none;
+    outline: none;
+    background-color: orange;
+    height: 50%;
+    margin: auto;
+    /* width: 30%; */
+    color: white;
+    font-weight: bold;
+    font-size:large;
+}
+.modify{
+    border :none;
+    outline: none;
+    background-color: orange;
+    height: 50%;
+    margin: auto;
+    /* width: 20%; */
+    color: white;
+    font-weight: bold;
+    font-size:large;
+}
+.navians{
+    height: 45%;
+    border-bottom: 3px solid orange;
+    opacity: 0.8;
+    font-size: 18px;
+    text-decoration: none;
+    /* transition: opacity 0.4s; */
+    transition: opacity,border-bottom 0.4s;
+    /* border: 2px solid white; */
+}
+.addBorderBottom{
+    border-bottom-color: white;
+    opacity: 1;
+}
+.navians:hover{
+    opacity: 1;
+    cursor: pointer;
+    /* border-bottom-color: white; */
+}
+.freeSpace{
+    width: 15%;
+    height: 100%;
+    /* border :2px solid white; */
+}
+.authentication{
+    width: 25%;
+    height: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-right: 100px;
+}
+.buttonNavLink{
+    margin: auto;
+}
+.authBtn{
+    margin: auto;
+    font-size: 21px;
+    width: 110px;
+    height: 40px;
+    background-color: orange;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    border:1px solid white;
+    /* transition: font-size 0.3s ; */
+    /* transition:color 900ms; */
+}
+.signup{
+    background-color: #fff;
+    color:orange;
+}
+.authBtn:hover{
+    cursor: pointer;
+    font-size: 21.5px;
+}
+/* ----------------------- */
+/* @media screen and (max-width: 1000px) {
+    .navigationSection {
+      display: none;
+    }
+  } */
