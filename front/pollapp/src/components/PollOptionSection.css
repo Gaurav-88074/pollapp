@@ -25,7 +25,12 @@
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    transition: color 0.2s ease-out;
     /* border: 2px solid black; */
+}
+.rightHalf:hover{
+    cursor: pointer;
+    color: orange;
 }
 .optionText{
     height: 90%;

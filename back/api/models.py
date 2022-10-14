@@ -1,31 +1,22 @@
-from pyexpat import model
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
-class Profile(models.Model):
 
-    username = models.CharField(max_length=20,null =True,blank=True)
-    # profilePhoto  = models.ImageField()
-    phoneNumber = models.IntegerField(null=True,blank = True)
-    emailId = models.CharField(max_length=20,null =True,blank=True)
 
-    def __str__(self):
-        return f"{self.username} : {self.phoneNumber}"
-
-class VoteOption(models.Model):
-    voteStatement=models.CharField(max_length = 100,blank=True,null=True)
-    voteValue = models.IntegerField(blank=True,null=True,default=0)
-    votedUser = models.ManyToManyField(Profile,null=True,blank=True)
-    def __str__(self):
-        return f"{self.voteStatement}"
-        
-class Poll(models.Model):
-    # users =models.ForeignKey(Profile,on_delete=models.CASCADE)
-    pollQuestion  =models.CharField(max_length = 100,blank=True,null=True)
-    option = models.ManyToManyField(VoteOption,null=True,blank=True)
-
-    def __str__(self):
-        return f"{self.pollQuestion}"
-    
-
+class PollCard(models.Model):
+    _id = models.AutoField(primary_key=True,editable=False)
+    title = models.CharField(max_length=200,null =True,blank=True)
+    createdBy = models.ForeignKey(User,on_delete= models.SET_NULL,null=True)
+    def __str__(self) -> str:
+        return f"{self.title}"
+class PollCardOption(models.Model):
+    _id = models.AutoField(primary_key=True,editable=False)
+    optionTitle = models.CharField(max_length=200,null =True,blank=True)
+    pCardId = models.ForeignKey(PollCard,on_delete= models.SET_NULL,null=True)
+    def __str__(self) -> str:
+        return f"{self.optionTitle}"
+class VotedUser(models.Model):
+    _id = models.AutoField(primary_key=True,editable=False)
+    votedUser = models.ForeignKey(User,on_delete= models.SET_NULL,null=True)
+    votedOption=models.ForeignKey(PollCardOption,on_delete= models.SET_NULL,null=True)
     

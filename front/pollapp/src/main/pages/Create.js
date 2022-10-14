@@ -27,6 +27,7 @@ const Create = () => {
         state =>state.pollCardReducer.optionsState
     );
     const [pollQuestion, setPollQuestion] = useState("");
+
     const pollQuestionHandler = (event) =>{
         setPollQuestion(event.target.value);
         // console.log(event.target.value);
@@ -41,8 +42,8 @@ const Create = () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
+                pollQuestion:pollQuestion,
                 options : optionStateArray,
-                pollQuestion:pollQuestion
             })
         });
     }

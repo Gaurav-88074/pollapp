@@ -4,29 +4,30 @@ import PollOptionSection from './PollOptionSection'
 const PollCard = (props) => {
     // console.log(props);
     const getTotalVotes=(options)=>{
-        let res = 1;
-        // options.forEach(obj => {
-        //     res+=obj.voteValue
-        // });
-      
+        let res = 0;
+        options.forEach(obj => {
+            res+=obj.users.length
+        });
+        // console.log(res);
         return res;
     }
-    const totalVotes = getTotalVotes(props.option);
+    const totalVotes = getTotalVotes(props.options);
     const getWidth = (value,total)=>{
         return ((value/total)*100).toFixed(0);
     }
     return (
         <div className="pollCard">
             <section className="pollCard_1">
-                {props.pollQuestion}
+                {props.title}
             </section>     
             <section className="pollCard_2">
                 {
-                    props.option.map((obj)=>{
+                    props.options.map((obj)=>{
                         return <PollOptionSection 
-                                    width = {getWidth(obj.voteValue,totalVotes)} 
+                                    width = {getWidth(obj.users.length,totalVotes)} 
                                     title = {obj.voteStatement}
-                                    key = {obj.id}
+                                    key = {obj._id}
+                                    pollOptionId = {obj._id}
                                     {...obj}
                                 />
                     })
@@ -54,7 +55,7 @@ const PollCard = (props) => {
                     {totalVotes} votes
                 </div>
                 <button className='viewButton'>
-                    view result
+                    View result
                 </button>
                 
             </section>     

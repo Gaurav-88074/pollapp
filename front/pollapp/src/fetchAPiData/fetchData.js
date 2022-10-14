@@ -8,8 +8,9 @@ const FetchData =()=>{
     const dispatch = useDispatch();
     const [reduxData, setReduxData] = useState([]);
     const originalData = useSelector(state =>state.pollCardReducer.allCardData);
-
+    const refreshCardsState = useSelector(state =>state.redoReducer.refresh);
     useEffect(() => {
+        console.log("ya fine");
         const fetchFromBackend = async ()=>{
             let response = await fetch('http://127.0.0.1:8000/polls');
             if (response.status==200){
@@ -19,7 +20,7 @@ const FetchData =()=>{
             }
         }
         fetchFromBackend();
-    }, [])
+    }, [refreshCardsState])
     if (reduxData.length!=0 && originalData==null) {
         dispatch(pollCardActions.set(reduxData));
         // console.log(reduxData);

@@ -13,8 +13,11 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
     path('', views.index,name = "defaultPage"),
     path('users',views.usersData,name = "usersData"),
-    path('polls',views.pollsData,name = "pollsData"),
+    # path('polls',views.pollsData,name = "pollsData"),
+    path('polls',views.getMysqlPollData,name = "pollsData"),
+    path('pollsMysql',views.getMysqlPollData,name = "pollsData"),
     path('create',views.createPoll,name = "createPoll"),
+    path('update',views.updatePoll,name = "updatePoll"),
 
     path('login', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

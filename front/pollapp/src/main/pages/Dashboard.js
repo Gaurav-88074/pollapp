@@ -16,7 +16,7 @@ const Dashboard = () =>{
                     reduxData!=null
                         &&
                     reduxData.map((obj)=>{
-                        return <PollCard key = {obj.id} {...obj}/>
+                        return <PollCard key = {obj._id} {...obj}/>
                     })
                 }
                 
